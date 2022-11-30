@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'chatpage.dart';
+import 'package:whatsappclone/screens/statuspage.dart';
+import 'screens/chatpage.dart';
 
 void main() {
   runApp(myApp());
@@ -15,6 +16,7 @@ class myApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/' :(context) => Chatpage(),
+        '/status':(context) => Statuspage(),
       },
       
     );
