@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsappclone/screens/statuspage.dart';
-import 'screens/chatpage.dart';
+import 'screens/mainpage.dart';
 
 void main() {
   runApp(myApp());
@@ -13,11 +13,7 @@ class myApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark(),
-      initialRoute: '/',
-      routes: {
-        '/' :(context) => Chatpage(),
-        '/status':(context) => Statuspage(),
-      },
+      home: Mainpage(),
       
     );
   }

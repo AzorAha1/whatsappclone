@@ -8,52 +8,13 @@ class Chatpage extends StatefulWidget {
 }
 
 class _ChatpageState extends State<Chatpage> {
-  int _selectedindex = 0;
 
-  void _onItemTapped(int index) {
-    // if (index == 0) {
-    //   Navigator.pushNamed(context, '/status');
-    // }
-    setState(() {
-      _selectedindex = index;
-    });
-  }
+
+  
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            label: 'Status',
-            icon: newicons(
-              iconData: Icons.donut_large_outlined,
-            ),
-          ),
-          BottomNavigationBarItem(
-            label: 'Calls',
-            icon: newicons(
-              iconData: Icons.call_outlined,
-            ),
-          ),
-          BottomNavigationBarItem(
-            label: 'Camera',
-            icon: newicons(
-              iconData: Icons.camera_alt_outlined,
-            ),
-          ),
-          BottomNavigationBarItem(
-            label: 'Chats',
-            activeIcon: newicons(iconData: Icons.chat_bubble_outline_outlined),
-            icon: newicons(
-              iconData: Icons.chat_bubble_outline_outlined,
-            ),
-          ),
-        ],
-        currentIndex: _selectedindex,
-        selectedItemColor: Colors.blue,
-        onTap: _onItemTapped,
-      ),
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
