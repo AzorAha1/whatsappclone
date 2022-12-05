@@ -8,10 +8,6 @@ class Chatpage extends StatefulWidget {
 }
 
 class _ChatpageState extends State<Chatpage> {
-
-
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -65,7 +61,7 @@ class _ChatpageState extends State<Chatpage> {
             /// End of the part
 
             expandedHeight: 150,
-          ),
+          ), 
           SliverList(
             delegate: SliverChildBuilderDelegate(
               (context, index) {
