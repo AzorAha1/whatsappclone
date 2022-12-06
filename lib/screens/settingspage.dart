@@ -34,7 +34,7 @@ Widget newcard() => SliverToBoxAdapter(
             leading: CircleAvatar(),
             title: Text('Username'),
             trailing: MaterialButton(
-              child: Icon(Icons.qr_code),
+              child: Icon(Icons.qr_code,color: Colors.blue,),
               onPressed: () {
                 print('qr code pressed');
               },
@@ -88,11 +88,11 @@ Widget newcard() => SliverToBoxAdapter(
             leading: MaterialButton(
               minWidth: 10.0,
               height: 32.0,
-              color: Color.fromARGB(158, 127, 217, 130),
+              color: Color.fromARGB(255, 3, 135, 244),
               onPressed: () {
                 print('starred message');
               },
-              child: Icon(Icons.key_rounded),
+              child: Icon(Icons.key_rounded,),
             ),
             title: Text('Account'),
             trailing: Icon(Icons.arrow_forward_ios),
@@ -108,7 +108,7 @@ Widget newcard() => SliverToBoxAdapter(
             leading: MaterialButton(
               minWidth: 10.0,
               height: 32.0,
-              color: Color.fromARGB(158, 127, 217, 130),
+              color: Color.fromARGB(255, 47, 161, 214),
               onPressed: () {
                 print('starred message');
               },
@@ -127,7 +127,7 @@ Widget newcard() => SliverToBoxAdapter(
             leading: MaterialButton(
               minWidth: 10.0,
               height: 32.0,
-              color: Color.fromARGB(158, 127, 217, 130),
+              color: Color.fromARGB(255, 151, 241, 47),
               onPressed: () {
                 
               },
@@ -152,7 +152,7 @@ Widget newcard() => SliverToBoxAdapter(
               },
               child: Icon(Icons.edit_notifications),
             ),
-            title: Text('Linked Devices'),
+            title: Text('Notifications'),
             trailing: Icon(Icons.arrow_forward_ios),
           ),
           Divider(
