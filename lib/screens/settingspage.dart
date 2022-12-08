@@ -146,11 +146,11 @@ Widget newcard() => SliverToBoxAdapter(
             leading: MaterialButton(
               minWidth: 10.0,
               height: 32.0,
-              color: Color.fromARGB(158, 127, 217, 130),
+              color: Color.fromARGB(255, 245, 21, 5),
               onPressed: () {
                 print('starred message');
               },
-              child: Icon(Icons.edit_notifications),
+              child: Image.asset('assets/not.png',height: 50,width: 27,),
             ),
             title: Text('Notifications'),
             trailing: Icon(Icons.arrow_forward_ios),
@@ -165,15 +165,52 @@ Widget newcard() => SliverToBoxAdapter(
             leading: MaterialButton(
               minWidth: 10.0,
               height: 32.0,
-              color: Color.fromARGB(158, 127, 217, 130),
+              color: Colors.lightGreen,
               onPressed: () {
                 print('starred message');
               },
-              child: Icon(Icons.laptop_mac),
+              child:Icon(Icons.storage),
             ),
+            
             title: Text('Linked Devices'),
             trailing: Icon(Icons.arrow_forward_ios),
           ),
+          Divider(
+            height: 30,
+          ),
+           cardwid(
+            leading: MaterialButton(
+              minWidth: 10.0,
+              height: 32.0,
+              color: Colors.blue,
+              onPressed: () {
+                print('starred message');
+              },
+              child: Icon(Icons.info),
+            ),
+            title: Text('Help'),
+            trailing: Icon(Icons.arrow_forward_ios),
+          ),
+          Divider(
+            color: Colors.grey,
+            thickness: 0.7,
+            indent: 100,
+            height: 0.0,
+          ),
+           cardwid(
+            leading: MaterialButton(
+              minWidth: 10.0,
+              height: 32.0,
+              color: Colors.red,
+              onPressed: () {
+                print('starred message');
+              },
+              child: Icon(Icons.heart_broken),
+            ),
+            title: Text('Tell a Friend'),
+            trailing: Icon(Icons.arrow_forward_ios),
+          ),
+         
           
         ],
       ),
