@@ -31,7 +31,9 @@ Widget newcard() => SliverToBoxAdapter(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           cardwid(
-            leading: CircleAvatar(),
+            leading: CircleAvatar(
+              backgroundImage: NetworkImage('https://static1.srcdn.com/wordpress/wp-content/uploads/2022/10/House-Of-The-Dragon-Episode-8-King-Viserys-Targaryen-Iron-Throne.jpg?q=50&fit=contain&w=943&h=&dpr=1.5'),
+            ),
             title: Text('Username'),
             trailing: MaterialButton(
               child: Icon(Icons.qr_code,color: Colors.blue,),

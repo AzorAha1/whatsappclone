@@ -31,11 +31,13 @@ environment:
 dependencies:
   customizable_space_bar: ^0.2.0
   easy_search_bar: ^2.4.2
+  flutter_camera: ^0.1.1
   flutter:
     sdk: flutter
   awesome_icons: ^1.1.0
-  camera: ^0.10.0+4
+  camera: ^0.9.4+11
   slide_switcher: ^1.1.2
+  
   
 
 
