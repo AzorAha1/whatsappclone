@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsappclone/screens/camerapage.dart';
+import 'package:whatsappclone/screens/chatpage.dart';
 import 'package:whatsappclone/screens/statuspage.dart';
 import 'screens/mainpage.dart';
 
@@ -19,6 +20,7 @@ class myApp extends StatelessWidget {
       home: Mainpage(),
       routes: {
         '/camerapage':(context) => CameraPage(),
+        '/chat':(context) => Chatpage(),
       },
     );
   }
